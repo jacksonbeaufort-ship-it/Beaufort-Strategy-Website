@@ -83,7 +83,7 @@ export const Footer: React.FC = () => {
             <span>© {new Date().getFullYear()} Beaufort Strategy Group. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
             <a
-              href="https://linkedin.com/in/beaufort-strategy-group"
+              href="https://www.linkedin.com/company/beaufort-strat"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#C5A880] transition-colors flex items-center gap-1.5"

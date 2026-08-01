@@ -42,7 +42,7 @@ export const COMPANY_INFO = {
   headline: "Strategy that moves businesses forward.",
   tagline: "We don't just build strategies. We implement them.",
   valueProp: "We help growing businesses implement world-class marketing, analytics, automation, and data systems without the overhead of building an internal department.",
-  email: "inquiries@beaufortstrategy.com",
+  email: "jb@BeaufortStrat.com",
   phone: "+1 (800) 482-9130",
   address: "100 Federal Street, Suite 2800, Boston, MA 02110",
   hours: "Monday - Friday: 8:00 AM - 6:00 PM EST",
@@ -339,7 +339,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: JACKSON_BEAUFORT_HEADSHOT,
     bio: "Former executive strategy consultant specializing in growth architecture for mid-market enterprises. Focuses on aligning capital allocation with turnkey technology implementation.",
     expertise: ["Growth Strategy", "Revenue Operations", "Executive Alignment", "M&A Diagnostics"],
-    linkedin: "https://linkedin.com/in/beaufort-strategy-group"
+    linkedin: "https://www.linkedin.com/in/jackson-beaufort"
   },
   {
     id: "marcus-thorne",
@@ -349,7 +349,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
     bio: "15+ years engineering high-throughput data platforms, cloud warehouses, and real-time ETL pipelines. Leads technical execution for all client database and analytics infrastructure.",
     expertise: ["Data Warehousing", "Snowflake / BigQuery", "dbt Transformations", "ETL Pipelines"],
-    linkedin: "https://linkedin.com/in/beaufort-strategy-group"
+    linkedin: "https://www.linkedin.com/company/beaufort-strat"
   }
 ];
 
