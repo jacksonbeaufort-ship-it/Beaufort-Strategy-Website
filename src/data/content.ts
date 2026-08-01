@@ -35,6 +35,8 @@ export interface AssessmentOption {
   timeToImpact: string;
 }
 
+const JACKSON_BEAUFORT_HEADSHOT = new URL('../public/JBHeadshot_23.JPG', import.meta.url).href;
+
 export const COMPANY_INFO = {
   name: "Beaufort Strategy Group",
   headline: "Strategy that moves businesses forward.",
@@ -334,7 +336,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Jackson Beaufort",
     title: "Managing Partner & Chief Strategy Officer",
     roleTag: "Executive Strategy & Growth",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    image: JACKSON_BEAUFORT_HEADSHOT,
     bio: "Former executive strategy consultant specializing in growth architecture for mid-market enterprises. Focuses on aligning capital allocation with turnkey technology implementation.",
     expertise: ["Growth Strategy", "Revenue Operations", "Executive Alignment", "M&A Diagnostics"],
     linkedin: "https://linkedin.com/in/beaufort-strategy-group"

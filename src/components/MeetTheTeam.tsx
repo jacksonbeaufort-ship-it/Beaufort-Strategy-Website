@@ -41,7 +41,7 @@ export const MeetTheTeam: React.FC = () => {
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.title}`}
-                    className="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                    className="w-full h-full object-cover object-center filter grayscale contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#12141A] via-transparent to-transparent opacity-90" />
 
