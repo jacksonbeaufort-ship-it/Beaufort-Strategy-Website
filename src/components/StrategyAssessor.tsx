@@ -22,9 +22,8 @@ export const StrategyAssessor: React.FC<StrategyAssessorProps> = ({
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#C5A880]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-            <span>03. Interactive Strategy Assessor</span>
+          <div className="text-xs font-mono tracking-widest uppercase text-[#C5A880]">
+            <span>Interactive Strategy Assessor</span>
           </div>
 
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">

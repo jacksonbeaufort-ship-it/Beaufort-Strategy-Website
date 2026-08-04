@@ -14,9 +14,8 @@ export const Introduction: React.FC = () => {
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#C5A880]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-              <span>01. The Beaufort Philosophy</span>
+            <div className="text-xs font-mono tracking-widest uppercase text-[#C5A880]">
+              <span>The Beaufort Philosophy</span>
             </div>
 
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-[1.1] font-light">

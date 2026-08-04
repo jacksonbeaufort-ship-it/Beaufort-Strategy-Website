@@ -25,11 +25,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Philosophy', href: '#philosophy', number: '01' },
-    { name: 'Services', href: '#services', number: '02' },
-    { name: 'Assessor', href: '#assessor', number: '03' },
-    { name: 'Leadership', href: '#team', number: '04' },
-    { name: 'Contact', href: '#contact', number: '05' },
+    { name: 'Philosophy', href: '#philosophy' },
+    { name: 'Services', href: '#services' },
+    { name: 'Assessor', href: '#assessor' },
+    { name: 'Leadership', href: '#team' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   const handleNavClick = (href: string) => {
@@ -70,9 +70,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                 onClick={() => handleNavClick(link.href)}
                 className="group flex items-center gap-1.5 text-[13px] tracking-[0.08em] uppercase text-[#C8C5BF] hover:text-[#FAF8F5] transition-colors focus:outline-none cursor-pointer"
               >
-                <span className="text-[10px] text-[#C5A880]/80 font-mono group-hover:text-[#C5A880]">
-                  {link.number}
-                </span>
                 <span>{link.name}</span>
               </button>
             ))}
@@ -123,7 +120,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                   className="flex items-center justify-between text-left py-2 border-b border-[#1E212B] text-lg font-serif tracking-wide text-[#EFECE6] hover:text-[#C5A880] transition-colors"
                 >
                   <span>{link.name}</span>
-                  <span className="text-xs font-mono text-[#C5A880]">{link.number}</span>
                 </button>
               ))}
 
@@ -140,11 +136,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                 </button>
 
                 <a
-                  href="tel:+18004829130"
+                  href="tel:+19199249972"
                   className="flex items-center justify-center gap-2 py-3 text-xs tracking-wider uppercase text-[#C8C5BF] hover:text-[#FAF8F5]"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#C5A880]" />
-                  <span>+1 (800) 482-9130</span>
+                  <span>+1 (919) 924-9972</span>
                 </a>
               </div>
             </div>

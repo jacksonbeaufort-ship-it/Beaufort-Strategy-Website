@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2, ShieldCheck, Calendar, Sparkles } from 'lucide-react';
+import { Mail, Phone, Clock, ArrowRight, CheckCircle2, ShieldCheck, Calendar, Sparkles } from 'lucide-react';
 import { COMPANY_INFO, CORE_SERVICES } from '../data/content';
 
 interface ContactProps {
@@ -49,9 +49,8 @@ export const Contact: React.FC<ContactProps> = ({
           {/* Left Column: Direct Contact Info & SLA */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#C5A880]">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-                <span>05. Initiate Engagement</span>
+              <div className="text-xs font-mono tracking-widest uppercase text-[#C5A880]">
+                <span>Initiate Engagement</span>
               </div>
 
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">
@@ -110,19 +109,6 @@ export const Contact: React.FC<ContactProps> = ({
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#181A20] border border-[#2A2D35] flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4 text-[#C5A880]" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-mono text-[#8E8B85] uppercase tracking-wider block">
-                    Headquarters
-                  </span>
-                  <span className="text-sm text-[#EFECE6] font-light block">
-                    {COMPANY_INFO.address}
-                  </span>
-                </div>
-              </div>
             </div>
 
           </div>

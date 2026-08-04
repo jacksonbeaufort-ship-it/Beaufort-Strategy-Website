@@ -103,7 +103,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       required
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      placeholder="e.g. Marcus Thorne"
+                      placeholder="e.g. Jennifer Beaufort"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-[#181A20] border border-[#2A2D35] text-xs text-[#FAF8F5] placeholder-[#57534E] focus:outline-none focus:border-[#C5A880]"
                     />
                   </div>

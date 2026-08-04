@@ -36,6 +36,7 @@ export interface AssessmentOption {
 }
 
 const JACKSON_BEAUFORT_HEADSHOT = new URL('../public/JBHeadshot_23.JPG', import.meta.url).href;
+const JENNIFER_BEAUFORT_IMAGE = new URL('../public/JenBeauf_image.png', import.meta.url).href;
 
 export const COMPANY_INFO = {
   name: "Beaufort Strategy Group",
@@ -43,8 +44,7 @@ export const COMPANY_INFO = {
   tagline: "We don't just build strategies. We implement them.",
   valueProp: "We help growing businesses implement world-class marketing, analytics, automation, and data systems without the overhead of building an internal department.",
   email: "jb@BeaufortStrat.com",
-  phone: "+1 (800) 482-9130",
-  address: "100 Federal Street, Suite 2800, Boston, MA 02110",
+  phone: "+1 (919) 924-9972",
   hours: "Monday - Friday: 8:00 AM - 6:00 PM EST",
 };
 
@@ -333,7 +333,7 @@ export const ASSESSMENT_OPTIONS: AssessmentOption[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "jackson-beaufort",
-    name: "Jackson Beaufort",
+    name: "Jackson Beaufort, MBA, MMA",
     title: "Founder & President",
     roleTag: "Growth Strategy, Analytics, & Automation",
     image: JACKSON_BEAUFORT_HEADSHOT,
@@ -342,32 +342,29 @@ export const TEAM_MEMBERS: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/jackson-beaufort"
   },
   {
-    id: "marcus-thorne",
-    name: "Marcus Thorne",
-    title: "Principal Data Architect & Partner",
-    roleTag: "Data Systems & Cloud Infrastructure",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-    bio: "15+ years engineering high-throughput data platforms, cloud warehouses, and real-time ETL pipelines. Leads technical execution for all client database and analytics infrastructure.",
-    expertise: ["Data Warehousing", "Snowflake / BigQuery", "dbt Transformations", "ETL Pipelines"],
-    linkedin: "https://www.linkedin.com/company/beaufort-strat"
+    id: "jennifer-beaufort",
+    name: "Jennifer Beaufort, PMP, CSM, ITIL-F",
+    title: "Managing Partner",
+    roleTag: "Project Management & Cyber Security",
+    image: JENNIFER_BEAUFORT_IMAGE,
+    bio: "Cybersecurity and project management leader guiding mid-to-large enterprises through complex audits and high-stakes, deadline-driven transformations. Excels at steering organizations through major change while aligning strict ISO/GRC standards with seamless execution.",
+    expertise: ["CyberSecurity Certifications", "Project Management", "Process Optimization", "Change Management"],
+    linkedin: "https://www.linkedin.com/in/jenniferbeaufort/"
   }
 ];
 
 export const PHILOSOPHY_PILLARS = [
   {
-    number: "01",
     title: "Zero Operational Overhead",
     subtitle: "Executive horsepower without full-time headcount",
     description: "Building internal marketing, analytics, and data engineering departments requires months of hiring, high salaries, and managerial management. We provide full-stack executive capability on day one."
   },
   {
-    number: "02",
     title: "Strategy + Execution Unified",
     subtitle: "We don't just write decks. We deploy the code.",
     description: "Most consulting agencies hand off a slide deck and leave you to figure out how to implement it. Beaufort Strategy Group designs the strategy and directly engineers the data pipelines, campaigns, and bots."
   },
   {
-    number: "03",
     title: "Precision Metric Accountability",
     subtitle: "Grounded in financial reality",
     description: "Every engagement is tied directly to clear, measurable business outcomes: reduced acquisition costs, faster data query speeds, eliminated manual labor hours, and expanded profit margins."

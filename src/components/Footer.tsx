@@ -34,27 +34,27 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-xs font-light text-[#C8C5BF]">
               <li>
                 <a href="#philosophy" className="hover:text-[#FAF8F5] transition-colors">
-                  01. Philosophy
+                  Philosophy
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-[#FAF8F5] transition-colors">
-                  02. Services & Capabilities
+                  Services & Capabilities
                 </a>
               </li>
               <li>
                 <a href="#assessor" className="hover:text-[#FAF8F5] transition-colors">
-                  03. Strategy Assessor
+                  Strategy Assessor
                 </a>
               </li>
               <li>
                 <a href="#team" className="hover:text-[#FAF8F5] transition-colors">
-                  04. Leadership
+                  Leadership
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-[#FAF8F5] transition-colors">
-                  05. Contact & Consultation
+                  Contact & Consultation
                 </a>
               </li>
             </ul>

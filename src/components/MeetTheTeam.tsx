@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Linkedin, ArrowUpRight, UserCheck, Shield, ExternalLink } from 'lucide-react';
+import { Linkedin, ArrowUpRight } from 'lucide-react';
 import { TEAM_MEMBERS } from '../data/content';
 
 export const MeetTheTeam: React.FC = () => {
@@ -10,9 +10,8 @@ export const MeetTheTeam: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4 mb-20">
-          <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#C5A880]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-            <span>04. Leadership & Partners</span>
+          <div className="text-xs font-mono tracking-widest uppercase text-[#C5A880]">
+            <span>Leadership & Partners</span>
           </div>
 
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">
@@ -107,15 +106,6 @@ export const MeetTheTeam: React.FC = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        {/* Easily Editable Note for Client */}
-        <div className="mt-16 p-6 rounded-2xl bg-[#14161D] border border-[#2A2D35] flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-[#A09D96] font-mono">
-          <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-[#C5A880]" />
-            <span>Note for Beaufort Strategy Group: Leadership bios and portraits can be customized easily prior to launch.</span>
-          </div>
-          <span className="text-[#C5A880] uppercase tracking-wider">Turnkey Partner Model</span>
         </div>
 
       </div>

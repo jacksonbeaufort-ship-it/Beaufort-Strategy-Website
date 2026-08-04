@@ -78,9 +78,8 @@ export const Services: React.FC<ServicesProps> = ({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="space-y-4 max-w-2xl">
-            <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[#C5A880]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-              <span>02. Capabilities & Execution</span>
+            <div className="text-xs font-mono tracking-widest uppercase text-[#C5A880]">
+              <span>Capabilities & Execution</span>
             </div>
 
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">
