@@ -334,11 +334,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "jackson-beaufort",
     name: "Jackson Beaufort",
-    title: "Managing Partner & Chief Strategy Officer",
-    roleTag: "Executive Strategy & Growth",
+    title: "Founder & President",
+    roleTag: "Growth Strategy, Analytics, & Automation",
     image: JACKSON_BEAUFORT_HEADSHOT,
-    bio: "Former executive strategy consultant specializing in growth architecture for mid-market enterprises. Focuses on aligning capital allocation with turnkey technology implementation.",
-    expertise: ["Growth Strategy", "Revenue Operations", "Executive Alignment", "M&A Diagnostics"],
+    bio: "Growth strategist and automation specialist helping businesses scale using data and automated workflows. Excels at turning complex operational data into automated systems that improve efficiency and drive revenue.",
+    expertise: ["Growth Strategy", "AI Automation", "Business Analytics", "Marketing Strategy"],
     linkedin: "https://www.linkedin.com/in/jackson-beaufort"
   },
   {
