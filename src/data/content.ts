@@ -1,7 +1,7 @@
 export interface ServiceItem {
   id: string;
   title: string;
-  domain: 'growth' | 'marketing' | 'data' | 'automation';
+  domain: 'growth' | 'marketing' | 'data' | 'automation' | 'security';
   domainLabel: string;
   tagline: string;
   description: string;
@@ -283,6 +283,29 @@ export const CORE_SERVICES: ServiceItem[] = [
         "Map mouse/keystroke and API workflows line by line",
         "Build resilient bot scripts with exception fallback handlers",
         "Set up automated execution schedules with detailed audit logs"
+      ]
+    }
+  },
+  {
+    id: "security-certifications-iso-27001",
+    title: "Governance, Risk & Compliance",
+    domain: "security",
+    domainLabel: "Security & Compliance",
+    tagline: "Turnkey ISMS implementation that guarantees audit readiness and enterprise trust.",
+    description: "Complete hands-on deployment of ISO 27001:2022 framework, risk assessments, security policies, internal audits, and external certification support.",
+    deliverables: [
+      "Comprehensive Information Security Management System (ISMS) framework & policy suite",
+      "Asset-based risk assessment & treatment plan (Annex A controls mapping)",
+      "Internal audit execution, readiness review, and Stage 1 & 2 audit management"
+    ],
+    impactMetric: "100% first-pass certification rate & 40% reduction in enterprise sales cycle friction",
+    architectureDetails: {
+      problemSolved: "Enterprise prospects and auditors require a verifiable information-security program before approving vendor relationships.",
+      techStack: ["ISO 27001:2022", "ISMS", "Annex A Controls", "Risk Register", "Internal Audit Program"],
+      processSteps: [
+        "Establish the ISMS scope, security policies, and accountable control owners.",
+        "Complete an asset-based risk assessment and map treatment actions to Annex A controls.",
+        "Run internal audit and readiness reviews, then manage Stage 1 and Stage 2 certification activities."
       ]
     }
   }
