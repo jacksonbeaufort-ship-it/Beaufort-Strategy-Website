@@ -34,7 +34,7 @@ export const Services: React.FC<ServicesProps> = ({
   const [activeBlueprintService, setActiveBlueprintService] = useState<ServiceItem | null>(null);
 
   const domainTabs = [
-    { id: 'growth', label: 'Growth & Strategy', count: 4 },
+    { id: 'growth', label: 'Growth & Strategy', count: 3 },
     { id: 'marketing', label: 'Marketing & Acquisition', count: 2 },
     { id: 'data', label: 'Data Engineering & Systems', count: 3 },
     { id: 'automation', label: 'AI & Automation', count: 2 },
@@ -50,9 +50,7 @@ export const Services: React.FC<ServicesProps> = ({
     switch (id) {
       case 'growth-consulting':
         return <TrendingUp className="w-5 h-5 text-[#C5A880]" />;
-      case 'business-analytics':
-        return <BarChart3 className="w-5 h-5 text-[#C5A880]" />;
-      case 'executive-dashboards':
+      case 'analytics-dashboarding':
         return <LayoutDashboard className="w-5 h-5 text-[#C5A880]" />;
       case 'marketing-strategy':
         return <Target className="w-5 h-5 text-[#C5A880]" />;

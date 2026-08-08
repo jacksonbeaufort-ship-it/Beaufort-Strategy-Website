@@ -74,48 +74,25 @@ export const CORE_SERVICES: ServiceItem[] = [
     }
   },
   {
-    id: "business-analytics",
-    title: "Business Analytics",
+    id: "analytics-dashboarding",
+    title: "Analytics & Dashboarding",
     domain: "growth",
     domainLabel: "Growth & Strategy",
-    tagline: "Turning raw operational signals into strategic clarity.",
-    description: "Converting multi-source operational metrics into predictive business intelligence so executives lead with foresight rather than hindsight.",
+    tagline: "In-depth business analysis & data visualizations designed to turn complex issues into digestible actions.",
+    description: "Convert multiple data sources into key metrics, helping diagnose the state of the business. Paired with living operational dashboards consolidating reporting into one central location.",
     deliverables: [
-      "Cross-department KPI modeling",
-      "Customer lifetime value & churn forecasting",
-      "Operational bottleneck diagnostics"
+      "KPI modeling & strategy diagnosis",
+      "Live data visuals and analytics",
+      "Central repository for historical data, analytics, and KPIs"
     ],
-    impactMetric: "100% clarity on true gross margin drivers",
+    impactMetric: "100% clarity on profit impact through living dashboards",
     architectureDetails: {
-      problemSolved: "Siloed data across CRM, ERP, and billing systems hiding true operational profitability.",
-      techStack: ["Python", "SQL", "dbt", "Statistical Modeling", "PowerBI / Tableau"],
+      problemSolved: "Fragmented reporting makes it difficult to diagnose performance and understand the profit impact of business decisions.",
+      techStack: ["Data Warehousing", "SQL", "KPI Modeling", "Power BI / Tableau", "Operational Dashboards"],
       processSteps: [
-        "Unify disparate enterprise data streams",
-        "Build predictive revenue & retention models",
-        "Establish automated alerting for margin anomalies"
-      ]
-    }
-  },
-  {
-    id: "executive-dashboards",
-    title: "Executive Dashboards",
-    domain: "growth",
-    domainLabel: "Growth & Strategy",
-    tagline: "C-suite decision cockpits built for real-time agility.",
-    description: "Bespoke, zero-noise dashboard architectures that consolidate executive reporting into intuitive, live single-pane views.",
-    deliverables: [
-      "Real-time revenue & margin cockpits",
-      "Automated weekly executive digest summaries",
-      "Mobile-optimized board reporting views"
-    ],
-    impactMetric: "15+ hours saved per executive monthly",
-    architectureDetails: {
-      problemSolved: "Manual compilation of weekly executive slide decks from fragmented spreadsheets.",
-      techStack: ["Looker", "Tableau", "Sigma Computing", "BigQuery", "Custom Embedded Dashboards"],
-      processSteps: [
-        "Map core strategic metrics to executive decision loops",
-        "Connect live data pipelines directly to visualization layer",
-        "Deploy role-based access cockpits with automated digest alerts"
+        "Unify relevant data sources into a centralized historical repository.",
+        "Define key metrics and diagnose performance drivers with business analysis.",
+        "Deploy living dashboards that make insights accessible in one central location."
       ]
     }
   },
@@ -339,7 +316,7 @@ export const ASSESSMENT_OPTIONS: AssessmentOption[] = [
     id: "disconnected-data",
     bottleneck: "Fragmented Data & Manual Reporting",
     description: "Leadership spends hours compiling weekly spreadsheets from disparate software systems.",
-    recommendedServices: ["Complete ETL Pipeline Development", "Executive Dashboards", "Data Cleanup"],
+    recommendedServices: ["Complete ETL Pipeline Development", "Analytics & Dashboarding", "Data Cleanup"],
     roadmapSteps: [
       "Ingest CRM, ERP, and Financial APIs into a centralized cloud warehouse.",
       "Cleanse and transform raw records into a unified reporting schema.",
@@ -352,7 +329,7 @@ export const ASSESSMENT_OPTIONS: AssessmentOption[] = [
     id: "marketing-roi",
     bottleneck: "Unpredictable Marketing CAC & Scalability",
     description: "Ad spending isn't tied to true customer lifetime value or closed-won revenue.",
-    recommendedServices: ["Marketing Strategy", "Digital Marketing", "Business Analytics"],
+    recommendedServices: ["Marketing Strategy", "Digital Marketing", "Analytics & Dashboarding"],
     roadmapSteps: [
       "Implement first-party offline conversion tracking back to ad platforms.",
       "Reallocate budget to top 20% highest LTV customer segments.",
