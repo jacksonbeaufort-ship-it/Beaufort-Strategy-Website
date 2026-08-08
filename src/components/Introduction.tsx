@@ -23,11 +23,15 @@ export const Introduction: React.FC = () => {
             </h2>
 
             <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-              Most consulting firms stop at slide decks. They identify problems, deliver high-level recommendations, and leave your team to figure out the complex technical implementation.
+              <strong className="font-medium text-[#EFECE6]">
+                Unlike traditional consulting firms that leave clients with thick slide decks and zero implementation support, we do things differently.
+              </strong>
             </p>
 
             <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-              At Beaufort Strategy Group, we bridge the gap. We design the executive growth, data, and marketing strategy, and then our senior architects build the pipelines, code the automation bots, and run the performance engines.
+              <strong className="font-medium text-[#EFECE6]">
+                At Beaufort Strategy, we combine high-level vision with hands-on execution. While traditional firms hand off a road map and step aside, we partner with your business to not only define your high-growth vision but also develop a step-by-step execution strategy to get you there.
+              </strong>
             </p>
           </div>
 
