@@ -15,11 +15,11 @@ export const MeetTheTeam: React.FC = () => {
           </div>
 
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">
-            Experienced Strategy & Engineering Leadership
+            Experienced Strategy, Leadership, & Implementation
           </h2>
 
           <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-            Our team combines senior executive consulting experience with hands-on enterprise data architecture, marketing ops, and AI system design.
+            Our team combines senior executive project management experience with hands-on enterprise data architecture & analytics, marketing strategy, and AI system design.
           </p>
         </div>
 
