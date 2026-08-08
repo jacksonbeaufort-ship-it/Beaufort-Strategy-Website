@@ -66,11 +66,10 @@ export const Footer: React.FC = () => {
               Core Practice Domains
             </span>
             <ul className="space-y-2 text-xs font-light text-[#A09D96]">
-              <li>• Growth Consulting & Business Analytics</li>
+              <li>• Growth Consulting & Analytics & Dashboarding</li>
               <li>• Marketing Strategy & Performance Marketing</li>
-              <li>• Database Administration & Data Engineering</li>
+              <li>• Data Engineering & Systems</li>
               <li>• Data Cleanup & ETL Pipeline Development</li>
-              <li>• Executive Dashboards</li>
               <li>• AI Automation & Robotic Process Automation (RPA)</li>
             </ul>
           </div>

@@ -170,29 +170,6 @@ export const CORE_SERVICES: ServiceItem[] = [
     }
   },
   {
-    id: "database-administration",
-    title: "Database Administration",
-    domain: "data",
-    domainLabel: "Data Engineering & Systems",
-    tagline: "Optimizing database health, speed, and failover resilience.",
-    description: "Proactive tuning, index management, backup protocols, and security hardening for mission-critical enterprise databases.",
-    deliverables: [
-      "Query execution plan optimization",
-      "Automated disaster recovery & failover systems",
-      "Database migration & version upgrades"
-    ],
-    impactMetric: "80% reduction in database latency & resource cost",
-    architectureDetails: {
-      problemSolved: "Slow query runtimes, locking issues, and risk of unverified backups.",
-      techStack: ["PostgreSQL", "MySQL", "SQL Server", "MongoDB", "AWS RDS / GCP Cloud SQL"],
-      processSteps: [
-        "Perform deep query profiling & index reorganization",
-        "Configure point-in-time recovery & automated backups",
-        "Implement automated connection pooling & security hardening"
-      ]
-    }
-  },
-  {
     id: "data-cleanup",
     title: "Data Cleanup & Governance",
     domain: "data",
@@ -342,7 +319,7 @@ export const ASSESSMENT_OPTIONS: AssessmentOption[] = [
     id: "manual-rpa",
     bottleneck: "Heavy Manual Back-Office & Data Entry",
     description: "Team members spend critical hours doing repetitive cross-system data entry.",
-    recommendedServices: ["AI Automation", "Robotic Process Automation (RPA)", "Database Administration"],
+    recommendedServices: ["AI Automation", "Robotic Process Automation (RPA)", "Data Cleanup & Governance"],
     roadmapSteps: [
       "Audit manual data entry loops across back-office operations.",
       "Deploy intelligent AI document parsers and RPA bots for legacy systems.",

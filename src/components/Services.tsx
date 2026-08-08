@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   TrendingUp,
-  BarChart3,
   LayoutDashboard,
   Target,
   Globe,
   Database,
   Workflow,
-  Server,
   Sparkles,
   Bot,
   ShieldCheck,
@@ -36,7 +34,7 @@ export const Services: React.FC<ServicesProps> = ({
   const domainTabs = [
     { id: 'growth', label: 'Growth & Strategy', count: 3 },
     { id: 'marketing', label: 'Marketing & Acquisition', count: 2 },
-    { id: 'data', label: 'Data Engineering & Systems', count: 3 },
+    { id: 'data', label: 'Data Engineering & Systems', count: 2 },
     { id: 'automation', label: 'AI & Automation', count: 2 },
     { id: 'security', label: 'Security & Compliance', count: 1 },
   ];
@@ -58,8 +56,6 @@ export const Services: React.FC<ServicesProps> = ({
         return <Globe className="w-5 h-5 text-[#C5A880]" />;
       case 'etl-pipeline-development':
         return <Workflow className="w-5 h-5 text-[#C5A880]" />;
-      case 'database-administration':
-        return <Server className="w-5 h-5 text-[#C5A880]" />;
       case 'data-cleanup':
         return <Layers className="w-5 h-5 text-[#C5A880]" />;
       case 'ai-automation':
