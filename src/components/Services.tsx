@@ -18,7 +18,8 @@ import {
   X,
   Code2,
   Cpu,
-  Terminal
+  Terminal,
+  Undo2
 } from 'lucide-react';
 import { CORE_SERVICES, ServiceItem } from '../data/content';
 
@@ -111,7 +112,7 @@ export const Services: React.FC<ServicesProps> = ({
           {domainTabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setSelectedDomain(tab.id)}
+              onClick={() => setSelectedDomain(selectedDomain === tab.id ? 'all' : tab.id)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 whitespace-nowrap cursor-pointer ${
                 selectedDomain === tab.id
                   ? 'bg-[#FAF8F5] text-[#0E0F12] shadow-md'
@@ -130,6 +131,16 @@ export const Services: React.FC<ServicesProps> = ({
               </span>
             </button>
           ))}
+          {selectedDomain !== 'all' && (
+            <button
+              onClick={() => setSelectedDomain('all')}
+              className="flex items-center justify-center w-9 h-9 rounded-full bg-[#14161D] text-[#C5A880] hover:bg-[#1C1F2B] hover:text-[#FAF8F5] border border-[#2A2D35] transition-colors cursor-pointer"
+              aria-label="Clear service filter"
+              title="Show all services"
+            >
+              <Undo2 className="w-4 h-4" />
+            </button>
+          )}
         </div>
 
         {/* Services Grid */}
