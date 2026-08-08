@@ -345,10 +345,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "jennifer-beaufort",
     name: "Jennifer Beaufort, PMP, CSM, ITIL-F",
     title: "Managing Partner",
-    roleTag: "Project Management & Cyber Security",
+    roleTag: "Execution Strategy, Change Management, & Security",
     image: JENNIFER_BEAUFORT_IMAGE,
-    bio: "Cybersecurity and project management leader guiding mid-to-large enterprises through complex audits and high-stakes, deadline-driven transformations. Excels at steering organizations through major change while aligning strict ISO/GRC standards with seamless execution.",
-    expertise: ["CyberSecurity Certifications", "Project Management", "Process Optimization", "Change Management"],
+    bio: "Project Management Expert specializing in security protocols and risk management. Navigates global enterprises through high-stakes, deadline-driven transformations. Excels at guiding complex business changes to ensure successful security audit results.",
+    expertise: ["Security Certifications", "Project Management", "Process Optimization", "Change Management"],
     linkedin: "https://www.linkedin.com/in/jenniferbeaufort/"
   }
 ];
