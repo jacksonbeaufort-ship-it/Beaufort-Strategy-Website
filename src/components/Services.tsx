@@ -33,8 +33,7 @@ export const Services: React.FC<ServicesProps> = ({
   const [activeBlueprintService, setActiveBlueprintService] = useState<ServiceItem | null>(null);
 
   const domainTabs = [
-    { id: 'all', label: 'All Capabilities', count: 11 },
-    { id: 'growth', label: 'Growth & Strategy', count: 3 },
+    { id: 'growth', label: 'Growth & Strategy', count: 4 },
     { id: 'marketing', label: 'Marketing & Acquisition', count: 2 },
     { id: 'data', label: 'Data Engineering & Systems', count: 3 },
     { id: 'automation', label: 'AI & Automation', count: 2 },
@@ -70,6 +69,8 @@ export const Services: React.FC<ServicesProps> = ({
         return <Bot className="w-5 h-5 text-[#C5A880]" />;
       case 'security-certifications-iso-27001':
         return <ShieldCheck className="w-5 h-5 text-[#C5A880]" />;
+      case 'business-transformation-growth':
+        return <Target className="w-5 h-5 text-[#C5A880]" />;
       default:
         return <Layers className="w-5 h-5 text-[#C5A880]" />;
     }

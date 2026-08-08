@@ -308,6 +308,29 @@ export const CORE_SERVICES: ServiceItem[] = [
         "Run internal audit and readiness reviews, then manage Stage 1 and Stage 2 certification activities."
       ]
     }
+  },
+  {
+    id: "business-transformation-growth",
+    title: "Business Transformation & Growth",
+    domain: "growth",
+    domainLabel: "Project & Strategy Execution",
+    tagline: "Turnkey execution that translates growth strategies into measurable business outcomes.",
+    description: "Complete hands-on management of strategic initiatives, cross-functional projects, resource alignment, and process optimization for growing businesses.",
+    deliverables: [
+      "Practical strategic roadmaps, priority alignment, and goal-tracking frameworks",
+      "Structured execution workflows and task-level accountability systems",
+      "Resource management, risk planning, and bottleneck elimination"
+    ],
+    impactMetric: "40% faster time-to-market for growth initiatives and 90%+ target completion rate",
+    architectureDetails: {
+      problemSolved: "Growth initiatives lose momentum when priorities, ownership, resources, and execution workflows are not aligned.",
+      techStack: ["Strategic Roadmaps", "Project Governance", "KPI Tracking", "Resource Planning", "Risk Management"],
+      processSteps: [
+        "Align strategic priorities to measurable business outcomes and accountable owners.",
+        "Build structured execution workflows with milestones, task-level accountability, and reporting.",
+        "Monitor risks, remove bottlenecks, and continuously optimize resources through delivery."
+      ]
+    }
   }
 ];
 
