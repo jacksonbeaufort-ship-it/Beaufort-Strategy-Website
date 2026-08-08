@@ -39,7 +39,7 @@ const JACKSON_BEAUFORT_HEADSHOT = new URL('../public/JBHeadshot_23.JPG', import.
 const JENNIFER_BEAUFORT_IMAGE = new URL('../public/JenBeauf_image.png', import.meta.url).href;
 
 export const COMPANY_INFO = {
-  name: "Beaufort Strategy Group",
+  name: "Beaufort Strategy",
   headline: "Strategy that moves businesses forward.",
   tagline: "We don't just build strategies. We implement them.",
   valueProp: "We help growing businesses implement world-class marketing, analytics, automation, and data systems without the overhead of building an internal department.",
@@ -362,7 +362,7 @@ export const PHILOSOPHY_PILLARS = [
   {
     title: "Strategy + Execution Unified",
     subtitle: "We don't just write decks. We deploy the code.",
-    description: "Most consulting agencies hand off a slide deck and leave you to figure out how to implement it. Beaufort Strategy Group designs the strategy and directly engineers the data pipelines, campaigns, and bots."
+    description: "Most consulting agencies hand off a slide deck and leave you to figure out how to implement it. Beaufort Strategy designs the strategy and directly engineers the data pipelines, campaigns, and bots."
   },
   {
     title: "Precision Metric Accountability",

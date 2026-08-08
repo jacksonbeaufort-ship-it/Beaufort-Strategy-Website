@@ -11,7 +11,7 @@ export const Logo: React.FC<LogoProps> = ({
   variant = 'light',
   iconOnly = false,
 }) => {
-  // Color mappings matching Beaufort Strategy Group brand palette
+  // Color mappings matching Beaufort Strategy brand palette
   const strokeColor =
     variant === 'light'
       ? '#EFECE6'

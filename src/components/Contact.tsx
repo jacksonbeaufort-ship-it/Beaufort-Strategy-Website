@@ -132,7 +132,7 @@ export const Contact: React.FC<ContactProps> = ({
                       Consultation Request Received
                     </h3>
                     <p className="text-sm text-[#C8C5BF] max-w-md mx-auto font-light leading-relaxed">
-                      Thank you, <strong className="text-[#FAF8F5]">{formData.fullName}</strong>. A Managing Partner at Beaufort Strategy Group will review your inquiry and contact you at <strong className="text-[#C5A880]">{formData.workEmail}</strong> shortly.
+                      Thank you, <strong className="text-[#FAF8F5]">{formData.fullName}</strong>. A Managing Partner at Beaufort Strategy will review your inquiry and contact you at <strong className="text-[#C5A880]">{formData.workEmail}</strong> shortly.
                     </p>
                   </div>
 

@@ -31,7 +31,7 @@ export const StrategyAssessor: React.FC<StrategyAssessorProps> = ({
           </h2>
 
           <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-            Select your primary operational friction point to preview Beaufort Strategy Group's custom system architecture and estimated efficiency impact.
+            Select your primary operational friction point to preview Beaufort Strategy's custom system architecture and estimated efficiency impact.
           </p>
         </div>
 

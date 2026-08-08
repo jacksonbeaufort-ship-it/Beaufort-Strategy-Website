@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
           <a
             href="#"
             className="group flex items-center focus:outline-none"
-            aria-label="Beaufort Strategy Group Home"
+            aria-label="Beaufort Strategy Home"
           >
             <Logo variant="light" />
           </a>

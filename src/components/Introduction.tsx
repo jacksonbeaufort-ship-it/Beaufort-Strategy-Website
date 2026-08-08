@@ -23,15 +23,11 @@ export const Introduction: React.FC = () => {
             </h2>
 
             <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-              <strong className="font-medium text-[#EFECE6]">
-                Unlike traditional consulting firms that leave clients with thick slide decks and zero implementation support, we do things differently.
-              </strong>
+              Unlike traditional consulting firms that leave clients with thick slide decks and zero implementation support, we do things differently.
             </p>
 
             <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
-              <strong className="font-medium text-[#EFECE6]">
-                At Beaufort Strategy, we combine high-level vision with hands-on execution. While traditional firms hand off a road map and step aside, we partner with your business to not only define your high-growth vision but also develop a step-by-step execution strategy to get you there.
-              </strong>
+              At Beaufort Strategy, we combine high-level vision with hands-on execution. While traditional firms hand off a road map and step aside, we partner with your business to not only define your high-growth vision but also develop a step-by-step execution strategy to get you there.
             </p>
           </div>
 
@@ -47,7 +43,7 @@ export const Introduction: React.FC = () => {
                     The Modern Operating Model
                   </span>
                   <h3 className="font-serif text-2xl text-[#FAF8F5] font-normal mt-1">
-                    Traditional Consulting vs. Beaufort Strategy Group
+                    Traditional Consulting vs. Beaufort Strategy
                   </h3>
                 </div>
               </div>

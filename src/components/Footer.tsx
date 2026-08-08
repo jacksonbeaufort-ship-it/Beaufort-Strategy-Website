@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Credits Bar */}
         <div className="pt-8 border-t border-[#1C1E26] flex flex-col sm:flex-row items-center justify-between gap-6 text-xs font-mono text-[#8E8B85]">
           <div className="flex flex-wrap items-center gap-6">
-            <span>© {new Date().getFullYear()} Beaufort Strategy Group. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} Beaufort Strategy. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
             <a
               href="https://www.linkedin.com/company/beaufort-strat"
