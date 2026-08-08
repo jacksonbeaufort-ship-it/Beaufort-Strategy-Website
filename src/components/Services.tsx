@@ -30,6 +30,7 @@ export const Services: React.FC<ServicesProps> = ({
 }) => {
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [activeBlueprintService, setActiveBlueprintService] = useState<ServiceItem | null>(null);
+  const [isServicesExpanded, setIsServicesExpanded] = useState(false);
 
   const domainTabs = [
     { id: 'growth', label: 'Growth & Strategy', count: 3 },
@@ -83,7 +84,7 @@ export const Services: React.FC<ServicesProps> = ({
             </div>
 
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF8F5] leading-tight font-light">
-              End-to-End Execution Services
+              End-to-end execution
             </h2>
 
             <p className="text-[#C8C5BF] text-base md:text-lg font-light leading-relaxed">
@@ -101,6 +102,55 @@ export const Services: React.FC<ServicesProps> = ({
           </div>
         </div>
 
+        <AnimatePresence mode="wait">
+          {!isServicesExpanded ? (
+            <motion.div
+              key="services-overview"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.35 }}
+              className="max-w-5xl rounded-2xl bg-[#12141A] border border-[#2A2D35] p-7 md:p-9 shadow-xl"
+            >
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-7">
+                <div>
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#C5A880]">
+                    Explore Our Services
+                  </span>
+                  <p className="mt-2 text-sm text-[#C8C5BF] font-light leading-relaxed max-w-2xl">
+                    A focused team for every stage of strategy, growth, data, automation, execution, and compliance.
+                  </p>
+                </div>
+                <span className="text-xs font-mono text-[#8E8B85] whitespace-nowrap">
+                  {CORE_SERVICES.length} Capabilities
+                </span>
+              </div>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-3 mb-8">
+                {CORE_SERVICES.map((service) => (
+                  <li key={service.id} className="flex items-start gap-2 text-xs text-[#EFECE6]">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C5A880] shrink-0 mt-0.5" />
+                    <span>{service.title}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                onClick={() => setIsServicesExpanded(true)}
+                className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-[#FAF8F5] hover:bg-[#C5A880] text-[#0E0F12] text-sm font-medium transition-colors cursor-pointer"
+              >
+                <span>Explore Our Services</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="services-grid"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.35 }}
+            >
         {/* Domain Filter Pills */}
         <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-none border-b border-[#1E212B]">
           {domainTabs.map((tab) => (
@@ -125,16 +175,20 @@ export const Services: React.FC<ServicesProps> = ({
               </span>
             </button>
           ))}
-          {selectedDomain !== 'all' && (
-            <button
-              onClick={() => setSelectedDomain('all')}
-              className="flex items-center justify-center w-9 h-9 rounded-full bg-[#14161D] text-[#C5A880] hover:bg-[#1C1F2B] hover:text-[#FAF8F5] border border-[#2A2D35] transition-colors cursor-pointer"
-              aria-label="Clear service filter"
-              title="Show all services"
-            >
-              <Undo2 className="w-4 h-4" />
-            </button>
-          )}
+          <button
+            onClick={() => {
+              if (selectedDomain === 'all') {
+                setIsServicesExpanded(false);
+              } else {
+                setSelectedDomain('all');
+              }
+            }}
+            className="flex items-center justify-center w-9 h-9 rounded-full bg-[#14161D] text-[#C5A880] hover:bg-[#1C1F2B] hover:text-[#FAF8F5] border border-[#2A2D35] transition-colors cursor-pointer"
+            aria-label={selectedDomain === 'all' ? 'Return to services overview' : 'Clear service filter'}
+            title={selectedDomain === 'all' ? 'Return to services overview' : 'Show all services'}
+          >
+            <Undo2 className="w-4 h-4" />
+          </button>
         </div>
 
         {/* Services Grid */}
@@ -219,6 +273,9 @@ export const Services: React.FC<ServicesProps> = ({
             ))}
           </AnimatePresence>
         </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
       </div>
 
